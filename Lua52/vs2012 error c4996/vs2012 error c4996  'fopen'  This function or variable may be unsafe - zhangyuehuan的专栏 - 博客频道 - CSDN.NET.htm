@@ -1,0 +1,778 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0058)http://blog.csdn.net/zhangyuehuan/article/details/12012635 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script type="text/javascript" async="" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/ga.js"></script><script id="allmobilize" charset="utf-8" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/allmobilize.min.js"></script><style type="text/css"></style>
+ <meta http-equiv="Cache-Control" content="no-siteapp"><link rel="alternate" media="handheld" href="http://blog.csdn.net/zhangyuehuan/article/details/12012635#">
+
+    <title>vs2012  error c4996: 'fopen': This function or variable may be unsafe - zhangyuehuan的专栏
+        - 博客频道 - CSDN.NET</title>
+    
+    <meta name="description" content="做数字图像处理作业，使用vs2012，遇到如下错误。1&gt;------ 已启动生成: 项目: 20130925, 配置: Debug Win32 ------1&gt;  stdafx.cpp1&gt;d:\code\20130925\20130925\stdafx.cpp(18): error C4996: &#39;fopen&#39;: This function or variable may be uns">
+    <script src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/ad.js"></script>
+        <!--new top-->
+       
+        <link rel="stylesheet" href="http://static.csdn.net/public/common/toolbar/css/index.css">
+        <!--new top-->
+
+    <link rel="Stylesheet" type="text/css" href="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/style.css">
+    <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="http://blog.csdn.net/zhangyuehuan/rss/list">
+    <link rel="shortcut icon" href="http://csdnimg.cn/public/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/default.css">
+ 
+
+
+<script src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/share.js"></script><script type="text/javascript" charset="utf-8" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/tracking.js"></script><script type="text/javascript" charset="utf-8" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/main.js"></script><link type="text/css" rel="stylesheet" href="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/style(1).css"><script src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/logger.js"></script><link rel="stylesheet" href="http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=89a7173d.css"><link href="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/bdsstyle.css" rel="stylesheet" type="text/css"></head><style type="text/css" id="__360se6_success_css"></style>
+<body><iframe style="display: none; " frameborder="0"></iframe>
+    
+   
+      <!--new top-->
+    <script id="toolbar-tpl-scriptId" fixed="true" prod="blog" skin="black" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/html.js" type="text/javascript"></script><div class="csdn-toolbar csdn-toolbar-skin-black ">        <div class="container row center-block ">          <div class="col-md-3 pull-left logo clearfix"><a href="http://www.csdn.net/?ref=toolbar" title="CSDN首页" target="_blank" class="icon"></a><a title="频道首页" href="http://blog.csdn.net/?ref=toolbar_logo" target="_blank" class="img blog-icon"></a></div>          <div class="pull-right login-wrap unlogin">            <ul class="btns">              <li class="loginlink"><a href="https://passport.csdn.net/account/login?ref=toolbar" target="_top">登录&nbsp;</a>|<a target="_top" href="https://passport.csdn.net/account/register?ref=toolbar">&nbsp;注册</a></li>              <li class="search">                <div class="icon on-search-icon">                  <div class="wrap">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <form action="http://so.csdn.net/search" method="get" target="_blank">                      <input type="hidden" value="toolbar" name="ref" accesskey="2">                      <div class="border">                        <input placeholder="搜索" type="text" value="" name="q" accesskey="2"><span class="icon-enter-sm"></span>                      </div>                    </form>                  </div>                </div>              </li>              <li class="favor">                <div class="icon on-favor-icon">                  <div class="wrap">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <div style="display:none;" class="favor-success"><span class="msg">收藏成功</span>                      <div class="btns"><span class="btn btn-primary ok">确定</span></div>                    </div>                    <div style="display:none;" class="favor-failed"><span class="icon-danger-lg"></span><span class="msg">收藏失败，请重新收藏</span>                      <div class="btns"><span class="btn btn-primary ok">确定</span></div>                    </div>                    <form role="form" class="form-horizontal favor-form">                      <div class="form-group">                        <div class="clearfix">                          <label for="input-title" class="col-sm-2 control-label">标题</label>                          <div class="col-sm-10">                            <input id="inputTitle" type="text" placeholder="" class="title form-control">                          </div>                        </div>                        <div class="alert alert-danger"><strong></strong>标题不能为空</div>                      </div>                      <div class="form-group">                        <label for="input-url" class="col-sm-2 control-label">网址</label>                        <div class="col-sm-10">                          <input id="input-url" type="text" placeholder="" class="url form-control">                        </div>                      </div>                      <div class="form-group">                        <label for="input-tag" class="col-sm-2 tag control-label">标签</label>                        <div class="col-sm-10">                          <input id="input-tag" type="text" class="form-control tag">                        </div>                      </div>                      <div class="form-group">                        <label for="input-description" class="description col-sm-2 control-label">摘要</label>                        <div class="col-sm-10">                          <textarea id="input-description" class="form-control description"></textarea>                        </div>                      </div>                      <div class="form-group">                        <div class="col-sm-offset-2 col-sm-10 ft">                          <div class="col-sm-4 pull-left">                            <div class="checkbox">                              <label>                                <input type="checkbox" name="share" checked="checked" class="share">公开                              </label>                            </div>                          </div>                          <div class="col-sm-8 pull-right favor-btns">                            <button type="button" class="cancel btn btn-default">取消</button>                            <button type="submit" class="submit btn btn-primary">收藏</button>                          </div>                        </div>                      </div>                    </form>                  </div>                </div>              </li>              <li class="notify">                <div style="display:none" class="number"></div>                <div style="display:none" class="icon-hasnotes-sm"></div>                <div id="header_notice_num"></div>                <div class="icon on-notify-icon">                  <div class="wrap">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <div id="note1" class="csdn_note">                      <div class="box"></div>                    <iframe src="about:block" frameborder="0" allowtransparency="true" style="z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background:transparent"></iframe></div>                  </div>                </div>              </li>              <li class="ugc">                <div class="icon on-ugc-icon">                  <div class="wrap clearfix">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <dl>                      <dt><a href="http://geek.csdn.net/news/expert?ref=toolbar" target="_blank" class="p-news clearfix"><em class="icon"></em><span>分享资讯</span></a></dt>                      <dt><a href="http://share.csdn.net/slides/new?ref=toolbar" target="_blank" class="p-doc clearfix"><em class="icon"></em><span>传PPT/文档</span></a></dt>                      <dt><a href="http://bbs.csdn.net/topics/new?ref=toolbar" target="_blank" class="p-ask clearfix"><em class="icon"></em><span>提问题</span></a></dt>                      <dt><a href="http://write.blog.csdn.net/postedit?ref=toolbar" target="_blank" class="p-blog clearfix"><em class="icon"></em><span>写博客</span></a></dt>                      <dt><a href="http://u.download.csdn.net/upload?ref=toolbar" target="_blank" class="p-src clearfix"><em class="icon"></em><span>传资源</span></a></dt>                      <dt><a href="https://code.csdn.net/projects/new?ref=toolbar" target="_blank" class="c-obj clearfix"><em class="icon"></em><span>创建项目</span></a></dt>                      <dt><a href="https://code.csdn.net/snippets/new?ref=toolbar" target="_blank" class="c-code clearfix"><em class="icon"></em><span>创建代码片</span></a></dt>                    </dl>                  </div>                </div>              </li>              <li class="profile">                <div class="icon on-profile-icon"><img src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/100x100.jpg" class="curr-icon-img">                  <div class="wrap clearfix">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <div class="bd">                      <dl class="clearfix">                        <dt class="pull-left img"><a target="_blank" href="http://my.csdn.net/?ref=toolbar" class="avatar"><img src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/100x100.jpg"></a></dt>                        <dd class="info"><a target="_blank" href="http://my.csdn.net/?ref=toolbar" class="nickname"></a><a class="set-nick" href="https://passport.csdn.net/account/profile">设置昵称<span class="write-icon"></span></a><span class="dec"><a class="fill-dec" href="http://my.csdn.net/" target="_blank">编辑自我介绍，让更多人了解你<span class="write-icon"></span></a></span></dd>                      </dl>                    </div>                    <div class="ft clearfix"><a target="_blank" href="http://my.csdn.net/my/account/changepwd?ref=toolbar" class="pull-left"><span class="icon-cog"></span>帐号设置</a><a href="https://passport.csdn.net/account/logout?ref=toolbar" target="_top" class="pull-right "><span class="icon-signout"></span><span class="out">退出</span></a></div>                  </div>                </div>              </li>              <li class="apps">                <div class="icon on-apps-icon">                  <div class="wrap clearfix">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                  <div class="detail">                    <dl>                      <dt>                        <h5>社区</h5>                      </dt>                      <dd> <a href="http://blog.csdn.net/?ref=toolbar" target="_blank">博客</a></dd>                      <dd> <a href="http://bbs.csdn.net/?ref=toolbar" target="_blank">论坛</a></dd>                      <dd> <a href="http://download.csdn.net/?ref=toolbar" target="_blank">下载</a></dd>                      <dd><a href="http://share.csdn.net/?ref=toolbar" target="_blank">Share</a></dd>                      <dd><a href="http://geek.csdn.net/?ref=toolbar" target="_blank">极客头条</a></dd>                    </dl>                  </div>                  <div class="detail">                    <dl>                      <dt>                        <h5>服务</h5>                      </dt>                      <dd> <a href="https://code.csdn.net/?ref=toolbar" target="_blank">CODE</a></dd>                      <dd> <a href="http://hero.csdn.net/?ref=toolbar" target="_blank">英雄会</a></dd>                      <dd> <a href="http://huiyi.csdn.net/?ref=toolbar" target="_blank">活动</a></dd>                      <dd> <a href="http://www.csto.com/?ref=toolbar" target="_blank">CSTO</a></dd>                    </dl>                  </div>                  <div class="detail last">                    <dl>                      <dt>                        <h5>俱乐部</h5>                      </dt>                      <dd> <a href="http://cto.csdn.net/?ref=toolbar" target="_blank">CTO俱乐部</a></dd>                      <dd> <a href="http://student.csdn.net/?ref=toolbar" target="_blank">高校俱乐部</a></dd>                    </dl>                  </div>                </div>              </div>            </li>            </ul>          </div>        </div>    </div>
+     <!--new top-->
+    <div id="container">
+        <div id="header">
+    <div class="header">
+        <div id="blog_title">
+            <h2>
+                <a href="http://blog.csdn.net/zhangyuehuan">zhangyuehuan的专栏</a></h2>
+            <h3></h3>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+</div>
+<div id="navigator">
+    <div class="navigator_bg">
+    </div>
+    <div class="navigator">
+        <ul>
+                <li id="btnContents"><a href="http://blog.csdn.net/zhangyuehuan?viewmode=contents"><span onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_mulu&#39;])">
+                    <img src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/ico_list.gif">目录视图</span></a></li>
+                <li id="btnView"><a href="http://blog.csdn.net/zhangyuehuan?viewmode=list"><span onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_zhaiyao&#39;])">
+                    <img src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/ico_summary.gif">摘要视图</span></a></li>
+                <li id="btnRss"><a href="http://blog.csdn.net/zhangyuehuan/rss/list"><span onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_RSS&#39;])">
+                    <img src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/ico_rss.gif">订阅</span></a></li>                
+
+            </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var username = "zhangyuehuan";
+    var _blogger = username;
+    var blog_address = "http://blog.csdn.net/zhangyuehuan";
+    var static_host = "http://static.blog.csdn.net";
+    var currentUserName = "";  
+</script>
+
+        <div id="body">
+            <div id="main">
+                <div class="main">
+                        <div class="ad_class">
+<div class="notice tracking-ad" data-mod="popu_3"> 
+
+<a href="http://blog.csdn.net/blogdevteam/article/details/38514369" target="_blank">
+<font color="blue">7月推荐文章
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://bbs.csdn.net/topics/390863850" target="_blank">
+<font color="red">【限时活动】建专辑得大奖</font></a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://bbs.csdn.net/ask" target="_blank">
+<font color="blue">社区问答第九期：老罗的Android之旅
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://blog.csdn.net/blogdevteam/article/details/38657235" target="_blank"><font color="red">当青春遇上互联网，能否点燃你的创业梦
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://blog.csdn.net/blogdevteam/article/details/38418263" target="_blank">
+<font color="blue">推荐有礼--找出您心中的技术大牛
+</font></a>
+
+
+</div>                        </div>
+                        
+
+  
+<link href="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/comment1.css" type="text/css" rel="stylesheet">
+<link href="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/style1.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/jquery.cookie.js"></script>
+<script type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/main(1).js"></script>
+<div id="article_details" class="details">
+    <div class="article_title">   
+         <span class="ico ico_type_Original"></span>
+
+
+    <h1>
+        <span class="link_title"><a href="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET.htm">
+        vs2012  error c4996: 'fopen': This function or variable may be unsafe
+        </a></span>
+    </h1>
+</div>
+
+    <div class="article_manage">
+        <span class="link_categories">
+        分类：
+            <a href="http://blog.csdn.net/zhangyuehuan/article/category/1381001" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_fenlei&#39;]);">图像识别</a> 
+        </span>
+    <span class="link_postdate">2013-09-25 14:37</span>
+    <span class="link_view" title="阅读次数">3422人阅读</span>
+    <span class="link_comments" title="评论次数"><a href="http://blog.csdn.net/zhangyuehuan/article/details/12012635#comments" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_pinglun&#39;])">评论</a>(0)</span>
+    <span class="link_collect"><a href="javascript:void(0);" onclick="javascript:_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_shoucang&#39;]);collectArticle(&#39;vs2012  error c4996: &amp;#39;fopen&amp;#39;: This function or variable may be unsafe&#39;,&#39;12012635&#39;);return false;" title="收藏">收藏</a></span>
+    <span class="link_report"><a href="http://blog.csdn.net/zhangyuehuan/article/details/12012635#report" onclick="javascript:_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_jubao&#39;]);report(12012635,2);return false;" title="举报">举报</a></span>
+    
+</div>
+
+  
+    
+<div id="article_content" class="article_content">
+
+<p>做数字图像处理作业，使用vs2012，遇到如下错误。</p>
+<p>1&gt;------ 已启动生成: 项目: 20130925, 配置: Debug Win32 ------<br>
+1&gt;&nbsp; stdafx.cpp<br>
+1&gt;d:\code\20130925\20130925\stdafx.cpp(18): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.<br>
+1&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d:\vs2012\vc\include\stdio.h(218) : 参见“fopen”的声明<br>
+1&gt;&nbsp; 20130925.cpp<br>
+1&gt;&nbsp; 正在生成代码...<br>
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========</p>
+<p>&nbsp;</p>
+<p>解决方案，项目 =》属性 =》c/c++&nbsp; =》预处理器=》点击预处理器定义，编辑，加入_CRT_SECURE_NO_WARNINGS，即可。</p>
+
+</div>
+
+
+
+
+<!-- Baidu Button BEGIN -->
+
+<div class="bdsharebuttonbox bdshare-button-style0-16" style="float: right;" data-bd-bind="1409105058647">
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/12012635#" class="bds_more" data-cmd="more" style="background-position:0 0 !important; background-image: url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png) !important"></a>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/12012635#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间" style="background-position:0 -52px !important"></a>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/12012635#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博" style="background-position:0 -104px !important"></a>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/12012635#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博" style="background-position:0 -260px !important"></a>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/12012635#" class="bds_renren" data-cmd="renren" title="分享到人人网" style="background-position:0 -208px !important"></a>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/12012635#" class="bds_weixin" data-cmd="weixin" title="分享到微信" style="background-position:0 -1612px !important"></a>
+</div>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<!-- Baidu Button END -->
+
+<!--192.168.100.35-->
+<ul class="article_next_prev">
+            <li class="prev_article"><span onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_shangyipian&#39;]);location.href=&#39;/zhangyuehuan/article/details/11965133&#39;;">上一篇</span><a href="http://blog.csdn.net/zhangyuehuan/article/details/11965133" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_shangyipian&#39;])">Cannot open include file: 'opencv2/core/core_c.h': No such file or directory .</a></li>
+            <li class="next_article"><span onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_xiayipian&#39;]);location.href=&#39;/zhangyuehuan/article/details/12030457&#39;;">下一篇</span><a href="http://blog.csdn.net/zhangyuehuan/article/details/12030457" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_xiayipian&#39;])">颜色空间相关知识总结</a></li>
+</ul>
+
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1536434" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/bds_s_v2.js"></script>
+
+<script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+
+
+</div>
+      <dl class="blog-associat-tag">
+        <dt>主题推荐</dt>
+        <dd>
+                <a href="http://www.csdn.net/tag/function" target="_blank" class="blog-tage-red">function</a> 
+                <a href="http://www.csdn.net/tag/vs2012" target="_blank" class="blog-tage-red">vs2012</a> 
+                <a href="http://www.csdn.net/tag/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86" target="_blank" class="blog-tage-red">图像处理</a> 
+                <a href="http://www.csdn.net/tag/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" target="_blank" class="blog-tage-red">解决方案</a> 
+                <a href="http://www.csdn.net/tag/%E5%A4%84%E7%90%86%E5%99%A8" target="_blank" class="blog-tage-red">处理器</a> 
+        </dd>
+    </dl> 
+
+
+<dl class="blog-ass-articl tracking-ad" data-mod="popu_36" id="res-relatived"> 
+     <dt><span>猜你在找</span></dt>    
+<dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/qianqiuwanzi/article/details/20639753" title="ffmpeg支持的编解码器和封装格式" strategy="CFRecommendAlgorithm" target="_blank">ffmpeg支持的编解码器和封装格式</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/willproud/article/details/8211689" title="图像细化算法 opencv实现 完整代码（附实验结果）" strategy="CFRecommendAlgorithm" target="_blank">图像细化算法 opencv实现 完整代码（附实验结果）</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/xiaowei_cqu/article/details/9004331" title="【模式识别】多层感知器 MLP" strategy="CFRecommendAlgorithm" target="_blank">【模式识别】多层感知器 MLP</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/wwy851/article/details/7999938" title="ASIFT+OpenCV图像特征匹配实战" strategy="CFRecommendAlgorithm" target="_blank">ASIFT+OpenCV图像特征匹配实战</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/rao_warrior/article/details/7770562" title="在centos (linux)　搭建　eclipse c++开发分环境" strategy="CFRecommendAlgorithm" target="_blank">在centos (linux)　搭建　eclipse c++开发分环境</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/dreamfreelancer/article/details/4509701" title="Socket上Accept连接的速率及影响因素" strategy="CFRecommendAlgorithm" target="_blank">Socket上Accept连接的速率及影响因素</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/wolangjushi/article/details/25075267" title="VS2012中运用OpenMP测试并行处理效率" strategy="CFRecommendAlgorithm" target="_blank">VS2012中运用OpenMP测试并行处理效率</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/zxdong0612/article/details/8620024" title="memset函数原型" strategy="CFRecommendAlgorithm" target="_blank">memset函数原型</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/CCLOVETT/article/details/12372421" title="怎么下载google code上的源代码" strategy="CFRecommendAlgorithm" target="_blank">怎么下载google code上的源代码</a></dd><dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="http://blog.csdn.net/bournechen/article/details/4806141" title="live555代码解读之三：SETUP和PLAY请求消息处理过程" strategy="CFRecommendAlgorithm" target="_blank">live555代码解读之三：SETUP和PLAY请求消息处理过程</a></dd></dl>
+
+<script type="text/javascript">
+    var searchtitletags = 'vs2012  error c4996: &#39;fopen&#39;: This function or variable may be unsafe' + ',' + 'function,vs2012,图像处理,解决方案,处理器';
+    searchService({
+        index: 'blog',
+        query: searchtitletags,
+        from: 10,
+        size: 10,
+        appendTo: '#res-relatived',
+        url: 'recommend',
+        his: 2,
+        client: "blog_cf_enhance",
+        tmpl: '<dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="#{ url }" title="#{ title }" strategy="#{ strategy }">#{ title }</a></dd>'
+    });
+
+ </script>   
+
+
+    <div id="ad_cen">
+   
+          <script type="text/javascript">
+              new Ad(4, 'ad_cen');
+          </script>
+    </div>
+<div class="comment_class">
+    <div id="comment_title" class="panel_head">
+        <span class="see_comment">查看评论</span><a name="comments"></a></div>
+    <div id="comment_list"><br>&nbsp;&nbsp;暂无评论<br><br><div class="clear"></div></div>
+    <div id="comment_bar">
+    </div>
+    <div id="comment_form"><div class="guest_link">您还没有登录,请<a href="javascript:void(0);" onclick="javascript:csdn.showLogin(function (dat) {js_logined(dat.data.userName);});">[登录]</a>或<a href="http://passport.csdn.net/account/register?from=http%3A%2F%2Fblog.csdn.net%2Fzhangyuehuan%2Farticle%2Fdetails%2F12012635">[注册]</a></div></div>
+
+    <div class="announce">
+        * 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场<a name="reply"></a><a name="quote"></a></div>
+</div>
+
+<script type="text/javascript">
+    var fileName = '12012635';
+    var commentscount = 0;
+    var islock = false
+</script>
+<script type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/comment.js"></script>
+    <div id="ad_bot">
+    </div>
+    <script type="text/javascript">
+    new Ad(5, 'ad_bot');
+    </script>
+<div id="report_dialog">
+</div>
+
+<div id="d-top" style="bottom:60px;">
+      
+
+       <a id="quick-reply" class="btn btn-top q-reply" title="快速回复" style="display:none;">
+            <img src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/blog-icon-reply.png" alt="快速回复">
+        </a>    
+
+    <a id="d-top-a" class="btn btn-top backtop" style="display: none; " title="返回顶部" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_huidaodingbu&#39;])">         
+         <img src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/top.png" alt="TOP">
+    </a>
+</div>
+<script type="text/javascript">
+    $(function ()
+    {
+        $("#ad_frm_0").height("90px");
+        
+        setTimeout(function(){
+            $("#ad_frm_2").height("200px");
+        },1000);
+        
+
+        if($("#comment_content").length>0)
+        {
+            $("#quick-reply").show();
+
+            $("#quick-reply").click(function(){
+                setEditorFocus();
+            });
+        }       
+     
+        var d_top = $('#d-top-a');
+        document.onscroll = function ()
+        {
+            var scrTop = (document.body.scrollTop || document.documentElement.scrollTop);
+            if (scrTop > 500)
+            {
+                d_top.show();
+            } else
+            {
+                d_top.hide();
+            }
+        }
+        $('#d-top-a').click(function ()
+        {
+            scrollTo(0, 0);
+            this.blur();
+            return false;
+        });
+    });
+  
+</script>
+<style type="text/css">
+    .tag_list
+    {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #D7CBC1;
+        color: #000000;
+        font-size: 12px;
+        line-height: 20px;
+        list-style: none outside none;
+        margin: 10px 2% 0 1%;
+        padding: 1px;
+    }
+    .tag_list h5
+    {
+        background: none repeat scroll 0 0 #E0DBD3;
+        color: #47381C;
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 5px;
+        margin: 0;
+    }
+    .tag_list h5 a
+    {
+        color: #47381C;
+    }
+    .classify
+    {
+        margin: 10px 0;
+        padding: 4px 12px 8px;
+    }
+    .classify a
+    {
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+</style>
+<div class="tag_list">
+    <h5>
+        <a href="http://www.csdn.net/tag/" target="_blank">核心技术类目</a></h5>
+    <div class="classify">
+<a title="全部主题" href="http://www.csdn.net/tag" target="_blank" onclick="LogClickCount(this,336);">全部主题</a>
+<a title="Hadoop" href="http://g.csdn.net/5272865" target="_blank" onclick="LogClickCount(this,336);">Hadoop</a>
+<a title="AWS" href="http://g.csdn.net/5272866" target="_blank" onclick="LogClickCount(this,336);">AWS</a>
+<a title="移动游戏" href="http://g.csdn.net/5272870" target="_blank" onclick="LogClickCount(this,336);">移动游戏</a>
+<a title="Java" href="http://g.csdn.net/5272871" target="_blank" onclick="LogClickCount(this,336);">Java</a>
+<a title="Android" href="http://g.csdn.net/5272872" target="_blank" onclick="LogClickCount(this,336);">Android</a>
+<a title="iOS" href="http://g.csdn.net/5272873" target="_blank" onclick="LogClickCount(this,336);">iOS</a>
+<a title="Swift" href="http://g.csdn.net/5272868" target="_blank" onclick="LogClickCount(this,336);">Swift</a>
+<a title="智能硬件" href="http://g.csdn.net/5272869" target="_blank" onclick="LogClickCount(this,336);">智能硬件</a>
+<a title="Docker" href="http://g.csdn.net/5272867" target="_blank" onclick="LogClickCount(this,336);">Docker</a>
+<a title="OpenStack" href="http://g.csdn.net/5272925" target="_blank" onclick="LogClickCount(this,336);">OpenStack</a>
+<a title="VPN" href="http://www.csdn.net/tag/vpn" target="_blank" onclick="LogClickCount(this,336);">VPN</a>
+<a title="Spark" href="http://g.csdn.net/5272924" target="_blank" onclick="LogClickCount(this,336);">Spark</a>
+<a title="ERP" href="http://www.csdn.net/tag/erp" target="_blank" onclick="LogClickCount(this,336);">ERP</a>
+<a title="IE10" href="http://www.csdn.net/tag/ie10" target="_blank" onclick="LogClickCount(this,336);">IE10</a>
+<a title="Eclipse" href="http://www.csdn.net/tag/eclipse" target="_blank" onclick="LogClickCount(this,336);">Eclipse</a>
+<a title="CRM" href="http://www.csdn.net/tag/crm" target="_blank" onclick="LogClickCount(this,336);">CRM</a>
+<a title="JavaScript" href="http://www.csdn.net/tag/javascript" target="_blank" onclick="LogClickCount(this,336);">JavaScript</a>
+<a title="数据库" href="http://www.csdn.net/tag/%E6%95%B0%E6%8D%AE%E5%BA%93" target="_blank" onclick="LogClickCount(this,336);">数据库</a>
+<a title="Ubuntu" href="http://www.csdn.net/tag/ubuntu" target="_blank" onclick="LogClickCount(this,336);">Ubuntu</a>
+<a title="NFC" href="http://www.csdn.net/tag/nfc" target="_blank" onclick="LogClickCount(this,336);">NFC</a>
+<a title="WAP" href="http://www.csdn.net/tag/wap" target="_blank" onclick="LogClickCount(this,336);">WAP</a>
+<a title="jQuery" href="http://www.csdn.net/tag/jquery" target="_blank" onclick="LogClickCount(this,336);">jQuery</a>
+<a title="BI" href="http://www.csdn.net/tag/bi" target="_blank" onclick="LogClickCount(this,336);">BI</a>
+<a title="HTML5" href="http://www.csdn.net/tag/html5" target="_blank" onclick="LogClickCount(this,336);">HTML5</a>
+<a title="Spring" href="http://www.csdn.net/tag/spring" target="_blank" onclick="LogClickCount(this,336);">Spring</a>
+<a title="Apache" href="http://www.csdn.net/tag/apache" target="_blank" onclick="LogClickCount(this,336);">Apache</a>
+<a title=".NET" href="http://www.csdn.net/tag/.net" target="_blank" onclick="LogClickCount(this,336);">.NET</a>
+<a title="API" href="http://www.csdn.net/tag/api" target="_blank" onclick="LogClickCount(this,336);">API</a>
+<a title="HTML" href="http://www.csdn.net/tag/html" target="_blank" onclick="LogClickCount(this,336);">HTML</a>
+<a title="SDK" href="http://www.csdn.net/tag/sdk" target="_blank" onclick="LogClickCount(this,336);">SDK</a>
+<a title="IIS" href="http://www.csdn.net/tag/iis" target="_blank" onclick="LogClickCount(this,336);">IIS</a>
+<a title="Fedora" href="http://www.csdn.net/tag/fedora" target="_blank" onclick="LogClickCount(this,336);">Fedora</a>
+<a title="XML" href="http://www.csdn.net/tag/xml" target="_blank" onclick="LogClickCount(this,336);">XML</a>
+<a title="LBS" href="http://www.csdn.net/tag/lbs" target="_blank" onclick="LogClickCount(this,336);">LBS</a>
+<a title="Unity" href="http://www.csdn.net/tag/unity" target="_blank" onclick="LogClickCount(this,336);">Unity</a>
+<a title="Splashtop" href="http://www.csdn.net/tag/splashtop" target="_blank" onclick="LogClickCount(this,336);">Splashtop</a>
+<a title="UML" href="http://www.csdn.net/tag/uml" target="_blank" onclick="LogClickCount(this,336);">UML</a>
+<a title="components" href="http://www.csdn.net/tag/components" target="_blank" onclick="LogClickCount(this,336);">components</a>
+<a title="Windows Mobile" href="http://www.csdn.net/tag/windowsmobile" target="_blank" onclick="LogClickCount(this,336);">Windows Mobile</a>
+<a title="Rails" href="http://www.csdn.net/tag/rails" target="_blank" onclick="LogClickCount(this,336);">Rails</a>
+<a title="QEMU" href="http://www.csdn.net/tag/qemu" target="_blank" onclick="LogClickCount(this,336);">QEMU</a>
+<a title="KDE" href="http://www.csdn.net/tag/kde" target="_blank" onclick="LogClickCount(this,336);">KDE</a>
+<a title="Cassandra" href="http://www.csdn.net/tag/cassandra" target="_blank" onclick="LogClickCount(this,336);">Cassandra</a>
+<a title="CloudStack" href="http://www.csdn.net/tag/cloudstack" target="_blank" onclick="LogClickCount(this,336);">CloudStack</a>
+<a title="FTC" href="http://www.csdn.net/tag/ftc" target="_blank" onclick="LogClickCount(this,336);">FTC</a>
+<a title="coremail" href="http://www.csdn.net/tag/coremail" target="_blank" onclick="LogClickCount(this,336);">coremail</a>
+<a title="OPhone " href="http://www.csdn.net/tag/ophone" target="_blank" onclick="LogClickCount(this,336);">OPhone </a>
+<a title="CouchBase" href="http://www.csdn.net/tag/couchbase" target="_blank" onclick="LogClickCount(this,336);">CouchBase</a>
+<a title="云计算" href="http://www.csdn.net/tag/%E4%BA%91%E8%AE%A1%E7%AE%97" target="_blank" onclick="LogClickCount(this,336);">云计算</a>
+<a title="iOS6" href="http://www.csdn.net/tag/iOS6" target="_blank" onclick="LogClickCount(this,336);">iOS6</a>
+<a title="Rackspace " href="http://www.csdn.net/tag/rackspace" target="_blank" onclick="LogClickCount(this,336);">Rackspace </a>
+<a title="Web App" href="http://www.csdn.net/tag/webapp" target="_blank" onclick="LogClickCount(this,336);">Web App</a>
+<a title="SpringSide" href="http://www.csdn.net/tag/springside" target="_blank" onclick="LogClickCount(this,336);">SpringSide</a>
+<a title="Maemo" href="http://www.csdn.net/tag/maemo" target="_blank" onclick="LogClickCount(this,336);">Maemo</a>
+<a title="Compuware" href="http://www.csdn.net/tag/compuware" target="_blank" onclick="LogClickCount(this,336);">Compuware</a>
+<a title="大数据" href="http://www.csdn.net/tag/%E5%A4%A7%E6%95%B0%E6%8D%AE" target="_blank" onclick="LogClickCount(this,336);">大数据</a>
+<a title="aptech" href="http://www.csdn.net/tag/aptech" target="_blank" onclick="LogClickCount(this,336);">aptech</a>
+<a title="Perl" href="http://www.csdn.net/tag/perl" target="_blank" onclick="LogClickCount(this,336);">Perl</a>
+<a title="Tornado" href="http://www.csdn.net/tag/tornado" target="_blank" onclick="LogClickCount(this,336);">Tornado</a>
+<a title="Ruby" href="http://www.csdn.net/tag/ruby" target="_blank" onclick="LogClickCount(this,336);">Ruby</a>
+<a title="Hibernate" href="http://www.csdn.net/hibernate" target="_blank" onclick="LogClickCount(this,336);">Hibernate</a>
+<a title="ThinkPHP" href="http://www.csdn.net/tag/thinkphp" target="_blank" onclick="LogClickCount(this,336);">ThinkPHP</a>
+<a title="HBase" href="http://www.csdn.net/tag/hbase" target="_blank" onclick="LogClickCount(this,336);">HBase</a>
+<a title="Pure" href="http://www.csdn.net/tag/pure" target="_blank" onclick="LogClickCount(this,336);">Pure</a>
+<a title="Solr" href="http://www.csdn.net/tag/solr" target="_blank" onclick="LogClickCount(this,336);">Solr</a>
+<a title="Angular" href="http://www.csdn.net/tag/angular" target="_blank" onclick="LogClickCount(this,336);">Angular</a>
+<a title="Cloud Foundry" href="http://www.csdn.net/tag/cloudfoundry" target="_blank" onclick="LogClickCount(this,336);">Cloud Foundry</a>
+<a title="Redis" href="http://www.csdn.net/tag/redis" target="_blank" onclick="LogClickCount(this,336);">Redis</a>
+<a title="Scala" href="http://www.csdn.net/tag/scala" target="_blank" onclick="LogClickCount(this,336);">Scala</a>
+<a title="Django" href="http://www.csdn.net/tag/django" target="_blank" onclick="LogClickCount(this,336);">Django</a>
+<a title="Bootstrap" href="http://www.csdn.net/tag/bootstrap" target="_blank" onclick="LogClickCount(this,336);">Bootstrap</a>
+    </div>
+</div>
+
+
+                        <div class="clear">
+                        </div>
+                    </div>                   
+                
+            </div>
+            <div id="side">
+    <div class="side">
+<div id="panel_Profile" class="panel">
+<ul class="panel_head"><span>个人资料</span></ul>
+<ul class="panel_body profile">
+<div id="blog_userface">
+    <a href="http://my.csdn.net/zhangyuehuan" target="_blank">
+    <img src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/1_zhangyuehuan.jpg" title="访问我的空间" style="max-width:90%">
+    </a>
+    <br>
+    <span><a href="http://my.csdn.net/zhangyuehuan" class="user_name" target="_blank">歆萌</a></span>
+</div>
+<div class="interact">
+<a href="javascript:void(0);" class="attent" id="span_add_follow" title="[加关注]" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_guanzhu&#39;])"></a>
+<a href="javascript:void(0);" class="letter" onclick="loginto(1)" title="[发私信]"></a>
+</div>
+<div id="blog_medal">
+<div id="bms_box"><a href="http://medal.blog.csdn.net/allmedal.aspx" target="_blank"><img src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/holdon_s2.gif" onmouseover="m_over_m(this,0)" onmouseout="m_out_m()" alt=""></a></div></div>
+<ul id="blog_rank">
+    <li>访问：<span>51990次</span></li>
+    <li>积分：<span>999分</span></li>
+    <li>排名：<span>第16465名</span></li>
+</ul>
+<ul id="blog_statistics">
+    <li>原创：<span>29篇</span></li>
+    <li>转载：<span>102篇</span></li>
+    <li>译文：<span>1篇</span></li>
+    <li>评论：<span>23条</span></li>
+</ul>
+</ul>
+</div>
+
+
+<div class="panel" id="panel_Search">
+    <ul class="panel_head"><span>文章搜索</span></ul>
+    <ul class="panel_body">
+        <form id="frmSearch" action="http://so.csdn.net/search" class="form_search" target="_blank">
+        <span><input id="inputSearch" type="text" class="blogsearch" title="请输入关键字"></span>
+        <input id="btnSubmit" type="button" value="搜索" title="search in blog">
+        <input type="hidden" name="q" id="inputQ">
+        <input type="hidden" name="t" value="blog">
+        <a id="btnSearchBlog" target="_blank"></a>
+        </form>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {           
+            search();
+        });
+
+        $("#frmSearch").submit(function () {
+            search();
+            return false;
+        });
+
+        function search()
+        {
+            var url = "http://so.csdn.net/so/search/s.do?q=" + encodeURIComponent($("#inputSearch").val()) + "&u=" + username + "&t=blog";
+            window.location.href = url;
+        }   
+    });
+</script><div id="panel_Category" class="panel">
+<ul class="panel_head"><span>文章分类</span></ul>
+<ul class="panel_body">
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/836167" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">Myeclips相关</a><span>(10)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/839349" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">心灵鸡汤</a><span>(2)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/836178" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">网页相关</a><span>(8)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/846876" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">Extjs</a><span>(1)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/1116741" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">Java</a><span>(2)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/1139023" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">Android</a><span>(1)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/1139027" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">开发辅助工具</a><span>(3)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/1154833" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">MVC</a><span>(1)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/1166254" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">数据库相关</a><span>(4)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/1373409" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">数字视频编码</a><span>(8)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/1375453" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">metlab</a><span>(7)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/1381001" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">图像识别</a><span>(4)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/1381126" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">数据结构与算法</a><span>(22)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/1413898" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">SSH</a><span>(4)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/1611181" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">日语</a><span>(1)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2035331" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">脑子里的杂七杂八</a><span>(1)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2064453" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">C/C++/C#</a><span>(25)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2106193" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">ACM</a><span>(18)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2125043" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">笔试面试</a><span>(21)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2149571" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">Unix/Linux</a><span>(7)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2149997" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">操作系统</a><span>(2)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2150017" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">计算机网络</a><span>(2)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2188915" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">leetcode</a><span>(7)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2224629" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">算法</a><span>(3)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2309055" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">舞蹈</a><span>(1)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2354699" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">AVS</a><span>(1)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/zhangyuehuan/article/category/2416977" onclick="_gaq.push([&#39;_trackEvent&#39;,&#39;function&#39;, &#39;onclick&#39;, &#39;blog_articles_wenzhangfenlei&#39;]); ">机器学习</a><span>(1)</span>
+            </li>
+</ul>
+</div><div id="panel_Archive" class="panel">
+<ul class="panel_head"><span>文章存档</span></ul>
+<ul class="panel_body">
+<div id="archive_list"><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2014/08">2014年08月</a><span>(2)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2014/07">2014年07月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2014/06">2014年06月</a><span>(2)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2014/05">2014年05月</a><span>(6)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2014/04">2014年04月</a><span>(17)</span></li><span class="hidelist" style="display:none;"><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2014/03">2014年03月</a><span>(35)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2013/12">2013年12月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2013/11">2013年11月</a><span>(2)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2013/10">2013年10月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2013/09">2013年09月</a><span>(6)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2013/06">2013年06月</a><span>(2)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2013/05">2013年05月</a><span>(4)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2013/04">2013年04月</a><span>(2)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2013/03">2013年03月</a><span>(16)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2012/06">2012年06月</a><span>(8)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2012/05">2012年05月</a><span>(5)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2012/04">2012年04月</a><span>(5)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2012/03">2012年03月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2011/11">2011年11月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2011/07">2011年07月</a><span>(6)</span></li><li><a href="http://blog.csdn.net/zhangyuehuan/article/month/2011/06">2011年06月</a><span>(9)</span></li></span><div id="archive_list_button" class="list_closed">展开</div></div>
+</ul>
+</div>
+<div id="hotarticls" class="panel">
+<ul class="panel_head">
+    <span>       
+阅读排行    </span>
+</ul>
+
+<ul class="panel_body itemlist">
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/6606420" title="韩寒语录">韩寒语录</a><span>(7686)</span>
+</li>
+<li>
+<a href="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET.htm" title="vs2012  error c4996: &#39;fopen&#39;: This function or variable may be unsafe">vs2012  error c4996: 'fopen': This function or variable may be unsafe</a><span>(3407)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/6561942" title="myeclipse自动生成类的set、get以及构造函数函数">myeclipse自动生成类的set、get以及构造函数函数</a><span>(2296)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/7505821" title="使用web.xml配置Web应用之初始化和预加载servlet和JSP页面">使用web.xml配置Web应用之初始化和预加载servlet和JSP页面</a><span>(2287)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/7533541" title="eclipse  里的Duplicate Location 问题">eclipse  里的Duplicate Location 问题</a><span>(2213)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/7684846" title="&lt;c:out&gt;">&lt;c:out&gt;</a><span>(2189)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/8743278" title="Hog算法讲解">Hog算法讲解</a><span>(1616)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/9044385" title="MyEclipse生成类图的方法">MyEclipse生成类图的方法</a><span>(1521)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/11965133" title="Cannot open include file: &#39;opencv2/core/core_c.h&#39;: No such file or directory .">Cannot open include file: 'opencv2/core/core_c.h': No such file or directory .</a><span>(1458)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/7505994" title="字典序法">字典序法</a><span>(1217)</span>
+</li>
+</ul>
+</div>
+<div id="hotarticls2" class="panel">
+<ul class="panel_head"><span>评论排行</span></ul>
+<ul class="panel_body itemlist">
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/21290213" title="csdn第四届在线编程大赛·线上初赛：带通配符的数">csdn第四届在线编程大赛·线上初赛：带通配符的数</a><span>(12)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/11965133" title="Cannot open include file: &#39;opencv2/core/core_c.h&#39;: No such file or directory .">Cannot open include file: 'opencv2/core/core_c.h': No such file or directory .</a><span>(4)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/23588271" title="（LeetCode) Reverse Words in a String">（LeetCode) Reverse Words in a String</a><span>(3)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/25339773" title="（csdn高校俱乐部编程挑战）2的补码">（csdn高校俱乐部编程挑战）2的补码</a><span>(2)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/21330519" title="英雄会第四届在线编程大赛·线上初赛：带通配符的数">英雄会第四届在线编程大赛·线上初赛：带通配符的数</a><span>(1)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/8898526" title="ssh面试题">ssh面试题</a><span>(1)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/22220763" title="腾讯2013年实习生笔试题目">腾讯2013年实习生笔试题目</a><span>(0)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/22219893" title="腾讯2012.4.25实习生招聘笔试题（2）">腾讯2012.4.25实习生招聘笔试题（2）</a><span>(0)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/22217673" title="腾讯2012.4.25实习生招聘笔试题">腾讯2012.4.25实习生招聘笔试题</a><span>(0)</span>
+</li>
+<li>
+<a href="http://blog.csdn.net/zhangyuehuan/article/details/22221071" title="腾讯2011.10.15校园招聘笔试题">腾讯2011.10.15校园招聘笔试题</a><span>(0)</span>
+</li>
+</ul>
+</div>
+<div id="homepageArticles" class="panel tracking-ad" data-mod="popu_4">
+<ul class="panel_head"><span>推荐文章</span></ul>
+<ul class="panel_body" id="ad_commend"></ul>
+</div>
+<script type="text/javascript">
+ new Ad(12, 'ad_commend');
+</script><div id="newcomments" class="panel">
+<ul class="panel_head"><span>最新评论</span></ul>
+<ul class="panel_body itemlist">
+    <li>
+   
+         <a href="http://blog.csdn.net/zhangyuehuan/article/details/11965133#comments">Cannot open include file: 'opencv2/core/core_c.h': No such file or directory .</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/lcx194017" class="user_name">lcx194017</a>:
+正解，Thank you!
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/zhangyuehuan/article/details/23588271#comments">（LeetCode) Reverse Words in a String</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/feng1912" class="user_name">vodkazc</a>:
+能问一下runtime是多少么
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/zhangyuehuan/article/details/23588271#comments">（LeetCode) Reverse Words in a String</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/zhangyuehuan" class="user_name">歆萌</a>:
+@jasonhu1990:它是c++的库函数。不需要实现。详情请搜索c++库函数，了解一下下吧。希望...
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/zhangyuehuan/article/details/23588271#comments">（LeetCode) Reverse Words in a String</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/jasonhu1990" class="user_name">jasonhu1990</a>:
+请问reverse函数怎么没有实现？
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/zhangyuehuan/article/details/23588271#comments">Cannot open include file: 'opencv2/core/core_c.h': No such file or directory .</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/pingingchen" class="user_name">pingingchen</a>:
+终于找到错误了
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/zhangyuehuan/article/details/25339773#comments">（csdn高校俱乐部编程挑战）2的补码</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/wj812746843" class="user_name">wj812746843</a>:
+for(int i = Min ;i&lt;=Max;i++)其中Max如果是整型的最大值，是不是死循环了...
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/zhangyuehuan/article/details/21290213#comments">csdn第四届在线编程大赛·线上初赛：带通配符的数</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/zhangyuehuan" class="user_name">歆萌</a>:
+@u012572172:就在编辑器里自己写完后粘贴进去啊~~
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/zhangyuehuan/article/details/21290213#comments">csdn第四届在线编程大赛·线上初赛：带通配符的数</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/u012572172" class="user_name">冷兵器寒武纪</a>:
+英雄会那个怎么写入代码滴 初次不会搞...
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/zhangyuehuan/article/details/21290213#comments">（csdn高校俱乐部编程挑战）2的补码</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/xiaobei1a2b3c" class="user_name">beYourselfOh</a>:
+负数n的补码表示等价于（unsigned)n的表示;代码可以这样改：int NumOfOne(uns...
+    </p>
+    </li>
+    <li>
+   
+         <a href="http://blog.csdn.net/zhangyuehuan/article/details/21290213#comments">csdn第四届在线编程大赛·线上初赛：带通配符的数</a>
+    <p style="margin:0px;"><a href="http://blog.csdn.net/hellolyx" class="user_name">hellolyx</a>:
+尝试用0～9的数代替那里面的几个？，然后分别与b比较大小，计算出比b大的，用python实现的，c应...
+    </p>
+    </li>
+</ul>
+</div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+
+            <div class="clear">
+            </div>
+        </div>
+        
+
+<script type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/cnick.js"></script>
+<script type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/newblog.min.js"></script>
+
+
+<script type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/showblogmedal.ashx"></script>
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="http://csdnimg.cn/pubfooter/js/publib_footer.js?' + Math.floor(new Date() / 120000).toString(36) + '="></' + 'script>');
+</script><script type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/publib_footer.js"></script><script src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/floating-frame.js" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/pub_footer_2012.css"><div id="pub_footerall" class="pub_footerall"><dl><dt></dt> <dd><a href="http://www.csdn.net/company/about.html" target="_blank">公司简介</a>|<a href="http://www.csdn.net/company/recruit.html" target="_blank">招贤纳士</a>|<a href="http://www.csdn.net/company/marketing.html" target="_blank">广告服务</a>|<a href="http://www.csdn.net/company/account.html" target="_blank">银行汇款帐号</a>|<a href="http://www.csdn.net/company/contact.html" target="_blank">联系方式</a>|<a href="http://www.csdn.net/company/statement.html" target="_blank">版权声明</a>|<a href="http://www.csdn.net/company/layer.html" target="_blank">法律顾问</a>|<a href="mailto:webmaster@csdn.net">问题报告</a>|<a target="_blank" href="http://www.csdn.net/friendlink.html">合作伙伴</a>|<a href="http://bbs.csdn.net/forums/Service" target="_blank">论坛反馈</a></dd><dd><a href="http://wpa.qq.com/msgrd?v=3&uin=2355263776&site=qq&menu=yes" target="_blank" class="qq">网站客服</a> <a href="http://wpa.qq.com/msgrd?v=3&uin=2251809102&site=qq&menu=yes" target="_blank" class="qq">杂志客服</a> <a href="http://e.weibo.com/csdnsupport/profile" target="_blank" class="weibo">微博客服</a> <a href="mailto:webmaster@csdn.net" class="email" title="联系邮箱">webmaster@csdn.net</a> <span class="phone" title="服务热线">400-600-2320</span></dd><dd>京&nbsp;ICP&nbsp;证&nbsp;070598&nbsp;号</dd><dd>北京创新乐知信息技术有限公司 版权所有</dd><dd>江苏乐知网络技术有限公司 提供商务支持</dd><dd>Copyright © 1999-2014, CSDN.NET, All Rights Reserved&nbsp;<a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202001032100010" target="_blank"><img src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/gongshang_logos.gif" alt="GongshangLogo" title=""></a></dd></dl></div><div id="note1" class="csdn_note" style="display:none; position:absolute; z-index:9999; width:440px">  <span class="notice_top_arrow"><span class="inner"></span></span>  <div class="box"></div></div><div class="csdn_notice_tip" style="display: none; position: absolute; z-index: 9990; width: 170px; ">  <iframe src="about:blank" frameborder="0" scrolling="no" style="z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background:transparent"></iframe>  <div class="tip_text">您有<strong>0</strong>条新通知</div>  <a href="javascript:void 0" class="close2"></a></div><script id="noticeScript" type="text/javascript" btnid="header_notice_num" wrapid="note1" count="5" subcount="5" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/notify.js"></script>
+    <script type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/login.js"></script>
+<script type="text/javascript">document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</script><img src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/pv.aspx" border="0" width="0" height="0">
+<script type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/counter.js"></script><script type="text/javascript" charset="UTF-8" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/msg.popup.js"></script>
+<script type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/ad-blog.js"></script>
+<script type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/count.js"></script><iframe src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/logs.htm" frameborder="0" width="0" height="0"></iframe>
+<script type="text/javascript">
+    $(function () {
+        function __get_code_toolbar(snippet_id) {
+            return $("<a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "' target='_blank' title='在CODE上查看代码片' style='text-indent:0;'><img src='https://code.csdn.net/assets/CODE_ico.png' width=12 height=12 alt='在CODE上查看代码片' style='position:relative;top:1px;left:2px;'/></a>"
+                    + "<a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "/fork' target='_blank' title='派生到我的代码片'  style='text-indent:0;'><img src='https://code.csdn.net/assets/ico_fork.svg' width=12 height=12 alt='派生到我的代码片' style='position:relative;top:2px;left:2px;'/></a>");
+        }
+        
+        $("[code_snippet_id]").each(function () {
+            __s_id = $(this).attr("code_snippet_id");
+            if (__s_id != null && __s_id != "" && __s_id != 0 && parseInt(__s_id) > 70020) {
+                __code_tool = __get_code_toolbar(__s_id);
+                $(this).prev().find(".tools").append(__code_tool);
+            }
+        });
+    });
+</script>
+
+    </div>
+      <!--new top-->
+    
+    <script id="csdn-toolbar-id" btnid="header_notice_num" wrapid="note1" count="5" subcount="5" type="text/javascript" src="./vs2012 error c4996  'fopen'  This function or variable may be unsafe - zhangyuehuan的专栏 - 博客频道 - CSDN.NET_files/toolbar.js"></script>
+     <!--new top-->
+
+
+</body></html>
